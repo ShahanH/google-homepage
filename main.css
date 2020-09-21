@@ -1,12 +1,141 @@
-body {
-    font-family: sans-serif;
-  margin: 0;
-  padding 0;
-  box-sizing: border-box;  
-}
-container-one {
-    float: left;
-}
-container-two{
-    float: right;
-}
+html{
+    height: 100%
+      width: 100%
+  }
+  body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+  }
+  #navbar{
+    display: grid;
+    grid-template-columns: 60px 1370px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px;
+    padding-top: 15px;
+    
+  }
+  #about {
+    padding-left: 25px;
+    color: #000;
+      opacity: 0.75;
+  }
+  #store {
+    padding-left: 20px;
+    color: #000;
+      opacity: 0.75;
+    border: none;
+  }
+  #gmail{
+    padding-left: 20px;
+    color: #000;
+      opacity: 0.75;
+  }
+  #images{
+    color: #000;
+      opacity: 0.75;
+  }
+  #menu {
+    padding-left: 15px;
+    opacity: .65;
+  }
+  #sign-in {
+     background-color: #4285f4;
+    border: 1px solid #4285f4;
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    width: 50px;
+    height: 30px;
+    border-radius: 3px;
+      line-height: 28px;
+    position:fixed; right:30px; top: 18px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  #main{
+      margin-top: 80px;
+  }
+  #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #search{
+    display: flex;
+    margin-left: 550px;
+    margin-right: auto;
+    margin-top: 15px;
+    width:600px;
+    height:25px;
+    padding-top: 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,.87);
+    opacity:.25;
+    line-height:34px;
+    background: url(https://raw.githubusercontent.com/25mm/google-homepage/master/images/search.png);
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: 10px;
+  } 
+  input:hover{
+  box-shadow: 0 3px 6px #c6c6c6;
+      border: 8px solid #fff;
+  }
+  #search-buttons{
+    display: flex;
+    margin-left: 725px;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 35px;
+  }
+  #google-search-btn{
+    margin-right: 15px;
+      border-radius: 3px;
+      border: none;
+      width: 120px;
+      background-color: #f2f2f2
+  }
+  #random-search-btn{
+        border-radius: 3px;
+      border: none;
+        width: 120px;
+        background-color: #f2f2f2
+  }
+  #footer{
+     display: grid;
+    grid-template-columns: 120px 80px 1300px 70px 70px 50px;
+    opacity: 0.6;
+      background-color: #eee;
+      left: 0px;
+      bottom: 0px;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+    padding-bottom:15px;
+    padding-top: 15px;
+  }
+  #advertising{
+    padding-left: 25px;
+    color: #000;
+      opacity: 0.75;
+  }
+  #business{
+    color: #000;
+      opacity: 0.75;
+  }
+  #how-to{
+    color: #000;
+      opacity: 0.75;
+  }
+  #privacy{color: #000;
+      opacity: 0.75;}
+  #terms{color: #000;
+      opacity: 0.75;}
+  #settings{color: #000;
+      opacity: 0.75;}
