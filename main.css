@@ -8,37 +8,52 @@ html{
     color: #000;
   }
   #navbar{
-    display: grid;
-    grid-template-columns: 60px 1370px 1fr 50px 50px 50px 50px;
-    grid-template-rows: 50px 50px;
-    padding-top: 15px;
-    
+      display: grid;
+      grid-template-columns: 50px 50px 1300px;
+      grid-template-rows: 50px 70px;
+      grid-template-areas: 
+      "about store . gmail images menu sign-in";
   }
   #about {
+    grid-area: about;
     padding-left: 25px;
     color: #000;
       opacity: 0.75;
+    justify-self: center;
+      align-self: center;
   }
   #store {
+      grid-area: store;
     padding-left: 20px;
     color: #000;
       opacity: 0.75;
     border: none;
+    justify-self: center;
+      align-self: center;
   }
   #gmail{
+      grid-area: gmail;
     padding-left: 20px;
     color: #000;
       opacity: 0.75;
+    justify-self: center;
+      align-self: center;
   }
   #images{
+      grid-area: images;
     color: #000;
       opacity: 0.75;
+    justify-self: center;
+      align-self: center;
   }
   #menu {
-    padding-left: 15px;
+      grid-area: menu;
     opacity: .65;
+    justify-self: center;
+      align-self: center;
   }
   #sign-in {
+      grid-area: sign-in;
      background-color: #4285f4;
     border: 1px solid #4285f4;
     color: white;
@@ -50,16 +65,14 @@ html{
     height: 30px;
     border-radius: 3px;
       line-height: 28px;
-    position:fixed; right:30px; top: 18px;
+  justify-self: center;
+      align-self: center;
   }
   a:link {
     text-decoration: none;
   }
   a:hover {
     text-decoration: underline;
-  }
-  #main{
-      margin-top: 80px;
   }
   #logo {
     display: block;
@@ -68,7 +81,7 @@ html{
   }
   #search{
     display: flex;
-    margin-left: 550px;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
     width:600px;
@@ -82,30 +95,32 @@ html{
       background-repeat: no-repeat;
       background-size: 24px;
       background-position: 10px;
+    padding-left: 50px;
+   align-self: center;
   } 
   input:hover{
   box-shadow: 0 3px 6px #c6c6c6;
       border: 8px solid #fff;
   }
-  #search-buttons{
+  #main{
     display: flex;
     margin-left: 725px;
     margin-right: auto;
     margin-top: 30px;
+    color: #000;
+      opacity: 0.7;
     height: 35px;
   }
   #google-search-btn{
-    margin-right: 15px;
+    margin-right: 10px;
       border-radius: 3px;
       border: none;
       width: 120px;
-      background-color: #f2f2f2
   }
   #random-search-btn{
         border-radius: 3px;
       border: none;
         width: 120px;
-        background-color: #f2f2f2
   }
   #footer{
      display: grid;
@@ -139,3 +154,7 @@ html{
       opacity: 0.75;}
   #settings{color: #000;
       opacity: 0.75;}
+  button:hover{
+    box-shadow: 3px 3px 3px 3px #c6c6c6;
+      border: 8px solid #fff;
+  }
